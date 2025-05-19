@@ -96,17 +96,6 @@ python -m pytest
 ```
 CarRentalSystem/
 ├── backend/
-│   ├── main.py            # FastAPI app entry point
-│   └── ...                # Other backend modules
-|--
-├── tests/
-│   └── test_main.py       # Test cases
-├── venv/                  # Python virtual environment
-├── requirements.txt       # Project dependencies
-└── README.md              # This file
-```
-CarRentalSystem/
-├── backend/
 │ ├── main.py               # FastAPI app entry point
 │ └── ...                   # Other backend modules
 ├── database/
@@ -130,6 +119,7 @@ CarRentalSystem/
 ├── setup.sh                # Development Setup Script
 ├── run.sh                  # Execution Script
 └── README.md               # This file
+```
 ---
 
 ## Notes
