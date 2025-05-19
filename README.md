@@ -82,22 +82,23 @@ All API endpoints are defined in `backend/main.py`.
 *   **Input:**
     ```json
     {
-      "make": "Toyota",
-      "model": "Corolla",
-      "year": 2022,
-      "daily_rate": 50.0,
-      "available": true
+       "id": 61,
+       "make": "Honda",
+       "model": "Civic",
+       "year": 2021,
+       "daily_rate": 40.0,
+       "available": true
     }
     ```
     
 *   **Output:**
     ```json
     {
-      "id": 1,
-      "make": "Toyota",
-      "model": "Corolla",
-      "year": 2022,
-      "daily_rate": 50.0,
+      "id": 61,
+      "make": "Honda",
+      "model": "Civic",
+      "year": 2021,
+      "daily_rate": 40,
       "available": true
     }
     ```
@@ -113,7 +114,7 @@ All API endpoints are defined in `backend/main.py`.
         "make": "Honda",
         "model": "Civic",
         "year": 2021,
-        "daily_rate": 40.0,
+        "daily_rate": 40,
         "available": true
     }
     response = requests.post(url, headers=headers, data=json.dumps(data))
