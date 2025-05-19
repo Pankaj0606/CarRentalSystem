@@ -1,0 +1,183 @@
+/* CarList.css */
+
+/* ========== Global & Background ========== */
+body {
+    background-color: #121212;
+    color: #f0f0f0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* ========== Modal Styles ========== */
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* dark overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #1e1e1e;
+    color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    position: relative;
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  
+  /* ========== Car List Container ========== */
+  
+  .car-list-container {
+    padding: 2rem;
+    background-color: #121212;
+  }
+  
+  .car-list-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #f0f0f0;
+  }
+  
+  
+  /* ========== Car Cards Grid ========== */
+  
+  .car-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  
+  /* ========== Individual Car Card ========== */
+  
+  .car-card {
+    background-color: #fdfdfd;
+    color: #222;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1.2rem;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .car-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.1);
+  }
+  
+  .car-card h3 {
+    margin: 0.5rem 0;
+    color: #111;
+  }
+  
+  .car-card p {
+    margin: 0.3rem 0;
+    color: #444;
+  }
+  
+  .car-card button {
+    margin-top: 0.7rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .car-card button:hover {
+    background-color: #0056b3;
+  }
+  
+  .car-card button:focus {
+    outline: 2px solid #007bff;
+  }
+  
+  /* ========== Navigation Button Container ========== */
+.nav-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Common Button Style */
+  .nav-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: 2px solid #4a4a4a;
+    background-color: #f4f4f4;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-button:hover:not(:disabled) {
+    background-color: #e0e0e0;
+  }
+  
+  /* Active Button */
+  .nav-button.active {
+    background-color: #4a90e2;
+    color: white;
+    border-color: #4a90e2;
+  }
+  
+  /* Disabled State */
+  .nav-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  
+  /* ========== Responsive Design ========== */
+  
+  @media (max-width: 480px) {
+    .car-card {
+      width: 90%;
+    }
+  
+    .modal-content {
+      padding: 1rem;
+    }
+  }
+  

@@ -1,0 +1,51 @@
+/* RentCarForm.css */
+
+.rent-form-container {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .rent-form-container h3 {
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .rent-form input[type="text"],
+  .rent-form input[type="date"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .rent-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.25rem;
+    color: #555;
+  }
+  
+  .rent-form button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .rent-form button:hover {
+    background-color: #0056b3;
+  }
+  
